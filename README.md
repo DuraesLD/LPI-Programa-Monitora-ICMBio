@@ -16,3 +16,26 @@ Por exemplo, verificou-se que os intervalos de confiança nos gráficos gerados 
 
 ![image](https://user-images.githubusercontent.com/39089964/46036611-4e12e780-c0dc-11e8-94d2-6e66d98edc30.png)
 
+### Instruções para execução do script
+
+1 - Instale o pacote devtools do R
+
+```r
+install.packages("devtools")
+```
+
+2 - Instale o pacote **rlpi** do Zoological-Society-of-London
+
+
+```r
+library(devtools)
+
+install_github("Zoological-Society-of-London/rlpi", dependencies=TRUE)
+```
+
+```
+## O pacote 'ggplot2' foi montado com a versão 3.2.5 do R
+```
+
+Com isso o script pode ser executado normalmente
+
