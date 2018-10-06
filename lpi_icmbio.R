@@ -5,8 +5,8 @@
 # Função prepara dados do icmbio e chama funções do pacote rlpi
 # Em fase de TESTE
 
-# selecionar diretorio
-setwd("/media/elildojr/Dados/r/lpi")
+# pegando diretório do script executado (Necessário usar ctrl/command-shift-s)
+setwd(dirname(parent.frame(2)$ofile))
 
 # abrir planilha de dados mastoaves
 dados <- read.csv("Planilha_consolidacao_mastoaves_24_05_2018.csv", sep=",")
