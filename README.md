@@ -1,6 +1,6 @@
 # LPI-Programa-Monitora-ICMBio
 
-Função **lpi_icmbio** para cálculo do LPI (Living Planet Index) a partir de dados do Programa Monitora-ICMBio
+Função **lpi_icmbio** para cálculo do LPI (Living Planet Index) a partir de dados do protocolo florestal básico (mamíferos e aves) do **Programa Monitora-ICMBio**
 
 O que a função **lpi_icmbio** faz:
 
@@ -14,9 +14,9 @@ Figura 1. LPI para a Resex Cazumbá-Iracema (somente primatas), 2014-2017.
 
 O pacote **rlpi** foi desenvolvido pela Zoological Society of London e está disponível para download (com instruções de instalação, etc.) no endereço https://github.com/Zoological-Society-of-London/rlpi
 
-A função **lpi_icmbio** ainda precisa de vários ajustes e qualquer contribuição é bem vinda. Algumas das necessidades já identificadas já estão indicadas como anotações no próprio script **lpi_icmbio**
+A função **lpi_icmbio** ainda precisa de vários ajustes e qualquer contribuição é bem vinda. Algumas das necessidades já estão indicadas como anotações no próprio script **lpi_icmbio**
 
-Por exemplo, a função poderia incluir um critério automático de exclusão de espécies raras do cálculo, pois a inclusão dessas espécies leva a um aumento muito grande nos intervalos de confiança dos gráficos.
+Por exemplo, considerando que o esforço de amostragem anual (cerca de 150 km de transecções percorridas por ano em cada UC) não e muito expressivo, a função poderia incluir um critério para excluir automaticamente as espécies raras, pois sua inclusão no cálculo leva a um aumento muito grande nos intervalos de confiança dos gráficos.
 
 ### Instruções para execução do script
 
@@ -50,4 +50,4 @@ lpi_icmbio(dados,z="Mamíferos") # calcula LPI somente para mamíferos
 lpi_icmbio(dados, "Resex Cazumbá-Iracema", "Aves") # calcula LPI somente para Resex Cazumbá-Iracema, somente para aves
 ```
 
-
+Observação: Algumas UCs possuem dados incompletos para alguns anos (por exemplo, apenas uma trilha do Monitora implantada em 2014), nesses casos, é recomendável excluir esses anos da planilha ANTES de rodar a função.
