@@ -28,7 +28,7 @@ ggplot_lpi_modif <- function (d, col = "darkblue", line_col = "white",
   	axis.text.x = ggplot2::element_text(size = 8, angle = 0, hjust = 1)
   )
   g <- g + ggplot2::ggtitle(title)
-  g <- g + ggplot2::ylab("Índice (2014 = 1)")
+  g <- g + ggplot2::ylab("Índice LPI (primeiro ano = 1)")
   g <- g + ggplot2::xlab("Ano")
   g <- g + ggplot2::scale_y_continuous(
   	trans = trans, breaks = seq(ylims[1], ylims[2], lpi_breaks)
