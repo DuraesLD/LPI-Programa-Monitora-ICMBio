@@ -4,8 +4,8 @@ Função **lpi_icmbio** para cálculo do LPI (Living Planet Index) a partir de d
 
 O que a função **lpi_icmbio** faz:
 
-(1) organiza os dados do programa Monitora-ICMBio (planilha mastoaves csv), colocando-os no formato exigido pelo pacote **rlpi**
-(2) cria um subset dos dados acima com a UC e o grupo taxonômico de interesse (mamíferos, aves)
+(1) organiza os dados do programa Monitora-ICMBio (planilha mastoaves csv), colocando-os no formato exigido pelo pacote **rlpi**;
+(2) cria um subset dos dados acima com a UC e o grupo taxonômico de interesse (mamíferos, aves);
 (3) chama a função **LPIMain** para cálculo do LPI e geração de gráficos.
 
 ![Rplot](https://user-images.githubusercontent.com/39089964/54770927-fa90da80-4be2-11e9-88d4-e2a77faa5962.jpeg)
