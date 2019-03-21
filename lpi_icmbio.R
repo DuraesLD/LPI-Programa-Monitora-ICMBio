@@ -10,8 +10,7 @@ setwd(dirname(parent.frame(2)$ofile))
 
 # abrir planilha de dados mastoaves
 dados <- read.csv("Planilha_consolidacao_mastoaves_24_05_2018.csv", sep=",")
-
-dados2 <- dados[dados$Espécies.validadas.para.análise.do.ICMBio != "",] # remover linhas com nome de espécie em branco
+dados <- dados[dados$Espécies.validadas.para.análise.do.ICMBio != "",] # remover linhas com nome de espécie em branco
 
 # Função lpi_icmbio:
 lpi_icmbio <- function(x,y,z) # x = dados, y = UC, z = Classe
@@ -76,36 +75,3 @@ lpi_icmbio <- function(x,y,z) # x = dados, y = UC, z = Classe
   ggplot_lpi_modif(mydata_lpi, col="cornflowerblue")
   
 } # Fim da função
-
-# Testando a função
-
-lpi_icmbio(dados2) # cálculo do LPI para todo o conjunto de dados do ICMBio
-lpi_icmbio(dados2,z="Mamíferos") # cálculo somente para mamíferos
-lpi_icmbio(dados2,z="Aves") # somente para aves
-
-lpi_icmbio(dados2, "Resex Cazumbá-Iracema") # Somente Cazumbá-Iracema
-lpi_icmbio(dados2, "Resex Cazumbá-Iracema", "Mamíferos")
-lpi_icmbio(dados2, "Resex Cazumbá-Iracema", "Aves")
-
-
-lpi_icmbio(dados2, "Resex Tapajós-Arapiuns", "Mamíferos")
-lpi_icmbio(dados2, "Resex Tapajós-Arapiuns", "Aves")
-lpi_icmbio(dados2, "Resex Tapajós-Arapiuns")
-
-
-lpi_icmbio(dados2, "Esec Terra do Meio", "Mamíferos")
-lpi_icmbio(dados2, "Esec Terra do Meio", "Aves")
-lpi_icmbio(dados2, "Esec Terra do Meio")
-
-lpi_icmbio(dados2, "Flona do Jamari", "Mamíferos")
-lpi_icmbio(dados2, "Flona do Jamari", "Aves")
-lpi_icmbio(dados2, "Flona do Jamari")
-
-lpi_icmbio(dados2, "Parna do Juruena", "Mamíferos")
-lpi_icmbio(dados2, "Parna do Juruena", "Aves")
-lpi_icmbio(dados2, "Parna do Juruena")
-
-lpi_icmbio(dados2, "Rebio Guaribas", "Mamíferos")
-lpi_icmbio(dados2, "Rebio Guaribas", "Aves")
-lpi_icmbio(dados2, "Rebio Guaribas")
-
