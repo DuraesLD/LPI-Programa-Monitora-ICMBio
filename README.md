@@ -8,13 +8,14 @@ O que a função **lpi_icmbio** faz:
 (2) cria um subset dos dados acima com a UC e o grupo taxonômico de interesse (mamíferos, aves)
 (3) chama a função **LPIMain** para cálculo do LPI e geração de gráficos.
 
+![Rplot](https://user-images.githubusercontent.com/39089964/54770927-fa90da80-4be2-11e9-88d4-e2a77faa5962.jpeg)
+Figura 1. LPI para a Resex Cazumbá-Iracema (somente primatas), 2014-2017.
+
 O pacote **rlpi** foi desenvolvido pela Zoological Society of London e está disponível para download (com instruções de instalação, etc.) no endereço https://github.com/Zoological-Society-of-London/rlpi
 
 A função **lpi_icmbio** ainda precisa de vários ajustes e qualquer contribuição é bem vinda. Algumas das necessidades já identificadas já estão indicadas como anotações no próprio script **lpi_icmbio**
 
 Por exemplo, a função poderia incluir um critério automático de exclusão de espécies raras do cálculo, pois a inclusão dessas espécies leva a um aumento muito grande nos intervalos de confiança dos gráficos.
-
-![image](https://user-images.githubusercontent.com/39089964/46036611-4e12e780-c0dc-11e8-94d2-6e66d98edc30.png)
 
 ### Instruções para execução do script
 
