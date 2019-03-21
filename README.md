@@ -9,6 +9,7 @@ O que a função **lpi_icmbio** faz:
 (3) chama a função **LPIMain** para cálculo do LPI e geração de gráficos.
 
 ![Rplot](https://user-images.githubusercontent.com/39089964/54770927-fa90da80-4be2-11e9-88d4-e2a77faa5962.jpeg)
+
 Figura 1. LPI para a Resex Cazumbá-Iracema (somente primatas), 2014-2017.
 
 O pacote **rlpi** foi desenvolvido pela Zoological Society of London e está disponível para download (com instruções de instalação, etc.) no endereço https://github.com/Zoological-Society-of-London/rlpi
